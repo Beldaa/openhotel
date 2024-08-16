@@ -24,6 +24,7 @@ export type User = {
   positionUpdatedAt?: number;
 
   bodyDirection?: Direction;
+  skinColor: number;
 };
 
 export type UsersConfig = {
