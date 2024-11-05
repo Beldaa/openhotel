@@ -1,5 +1,5 @@
 import { SkinColor } from "shared/enums/main.ts";
-import { getRandomNumber } from "shared/utils/main.ts";
+import { getRandomNumber } from "@oh/utils";
 
 export const getRandomSkinColor = (): SkinColor => {
   let skins = Object.values(SkinColor);

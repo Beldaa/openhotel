@@ -11,11 +11,7 @@ import {
   GraphicType,
   sprite,
 } from "@tu/tulip";
-import {
-  getPositionFromIsometricPosition,
-  getTilePolygon,
-  isDevelopment,
-} from "shared/utils";
+import { getPositionFromIsometricPosition, getTilePolygon } from "shared/utils";
 import {
   Direction,
   Event,
@@ -99,7 +95,7 @@ export const roomComponent: ContainerComponent<Props, RoomMutable> = () => {
     removeOnRemoveFurniture?.();
   };
 
-  if (isDevelopment()) {
+  if (System.version.isDevelopment()) {
     const human = humanComponent({
       user: {
         skinColor: 0xff00ff,
